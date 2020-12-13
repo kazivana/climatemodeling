@@ -1,0 +1,50 @@
+---
+title: "Climate Modeling package"
+output: github_document
+---
+
+## Installation
+
+```{r, echo = FALSE}
+
+#install.packages("data.table", dependencies=TRUE)
+library(climatemodeling)
+library(ggplot2)
+
+```
+
+```{r, eval=FALSE}
+
+#devtools::install_github('https://github.com/kazivana/climatemodeling.git')
+
+```
+
+### Examples 
+
+# Loading data
+
+```{r}
+
+hist_ALADIN <- climatemodeling::historical_ALADIN
+hist_rca <- climatemodeling::historical_RCA
+
+
+```
+
+# Calculating Maxima
+
+```{r, eval=TRUE}
+getMX(hist_ALADIN, a = c(2,5,10,20))
+```
+
+# DDF Function
+
+```{r}
+frequency = c(2,5,10)
+
+hist <- climatemodeling::historical_ALADIN
+hist_ddf <- ddff(hist, frequency)
+
+
+```
+
