@@ -65,5 +65,3 @@ hist_ddf <- ddff(hist, frequency)
     ## 16:      D24 38.116883    2   24
     ## 17:      D24 49.170392    5   24
     ## 18:      D24 59.411640   10   24
-
-# Ploting results
