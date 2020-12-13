@@ -1,0 +1,13 @@
+Package: climatemodeling
+Type: Package
+Title: Climate Modeling for Advanced R
+Version: 0.1.0
+Author: Ivana
+Maintainer: The package maintainer <xkazi003@studenti.czu.cz>
+Description: Precipiation modelling using the CNRM-CERFACS-CNRM-CM5 global climate model data
+License: -
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    data.table
+RoxygenNote: 7.1.0
